@@ -25,50 +25,7 @@ class BasicBloc extends Bloc<BasicEvent, BasicState> {
 
   }
 
-  /// Verification Event Handler :
-
-  // void _handleLoginEvent(LoginEvent event,
-  //     Emitter<BasicState> emit) async {
-  //
-  //   late String newToken;
-  //
-  //   DialogUtil.showProgressDialog(
-  //       "", event.context, ColorConstants.primaryColorTwo);
-  //   await Future.delayed(Duration(seconds: 1));
-  //   Response? serverAPIResponseDto = await repository.loginEvent(event);
-  //   DialogUtil.dismissProgressDialog(event.context);
-  //   if (serverAPIResponseDto != null) {
-  //     if (serverAPIResponseDto.data["error"].toString() == "user not found") {
-  //
-  //       ToastUtil.showToast("Please Enter Credentials Correctly");
-  //
-  //     } else if (serverAPIResponseDto.data["token"].toString() != ""){
-  //       print(serverAPIResponseDto.data);
-  //       Map<String, dynamic> dataDto =
-  //       serverAPIResponseDto.data as Map<String, dynamic>;
-  //       UserData usermodal = UserData.fromJson(dataDto);
-  //       SharedPreferences prefs = await SharedPreferences.getInstance();
-  //       prefs.setString("usermodal", jsonEncode(usermodal));
-  //
-  //       if (jsonDecode(prefs.getString("usermodal").toString()).toString() !=
-  //           "null") {
-  //         Map<String, dynamic> jsonData =
-  //         jsonDecode(prefs.getString('usermodal').toString());
-  //         UserData usermodal = UserData.fromJson(jsonData);
-  //
-  //         newToken = usermodal.token;
-  //         print(newToken);
-  //       }
-  //       LoginCompleteState loginCompleteState =
-  //       LoginCompleteState(
-  //           context: event.context, version: state.version + 2);
-  //       emit(loginCompleteState);
-  //     }else{
-  //       ToastUtil.showToast('Some Error Has Occured');
-  //     }
-  //   }
-  // }
-
+  
   void _handleLoginEvent(LoginEvent event, Emitter<BasicState> emit) async {
     late String newToken;
 
