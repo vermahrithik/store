@@ -146,19 +146,19 @@ class _LoginPageStatefulState extends State<LoginPageStateful> {
                                   borderSide: BorderSide(
                                       color: ColorConstants.Grey500,
                                       width:
-                                          1), // Specify the width and color for enabled state
+                                          1),
                                 ),
                                 focusedBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                       color: Colors.grey.shade700,
                                       width:
-                                          1), // Specify the width and color for focused state
+                                          1),
                                 ),
                                 border: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                       color: ColorConstants.Grey500,
                                       width:
-                                          1), // Specify the default border properties
+                                          1),
                                 ),
                               ),
                             ),
