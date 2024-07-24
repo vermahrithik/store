@@ -10,8 +10,9 @@ this is a flutter app having features for user to login to app using the given e
 
 ## Features
 
-- **Login Page**
-- **Home Page**
-- **Product Search Page**
-- **Add Product Page**
-- **Delete Product Feature in Home Page**
+- **Login functionality**
+- **Routing to Home Screen Functionality if user is already logged in , using shared_preferences**
+- **Home Screen to show products using shared_preferences**
+- **Product Search Functionality using shared_preferences**
+- **Add Product Functionality using shared_preferences**
+- **Delete Product Functionality using shared_preferences**
