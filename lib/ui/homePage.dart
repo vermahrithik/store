@@ -63,15 +63,7 @@ class _ProductListPageState extends State<ProductListPage> {
     setState(() {});
     //
   }
-
-  /// ---------------------------------
-
-  // SharedPreferences? prefScan;
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   getPrefs();
-  // }
+
 
   @override
   Widget build(BuildContext context) {
