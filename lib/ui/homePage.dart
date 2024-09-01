@@ -44,22 +44,27 @@ class _ProductListPageState extends State<ProductListPage> {
     readFromSp();
   }
 
-  saveIntoSp() {
+  saveIntoSp() {
+
     List<String> productListString =
         showproducts.map((product) => jsonEncode(product.toJson())).toList();
-    sp.setStringList('Products', productListString);
+    sp.setStringList('Products', productListString);
+
   }
 
-  readFromSp() {
+  readFromSp() {
+
     List<String>? productListString = sp.getStringList('Products');
     if (productListString != null) {
       showproducts = productListString
           .map((product) => ProductData.fromJson(json.decode(product)))
           .toList();
     }
-    setState(() {});
+    setState(() {});
+
   }
-
+
+
 
   @override
   Widget build(BuildContext context) {
